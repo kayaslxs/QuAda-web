@@ -1,0 +1,50 @@
+:root {
+    --bg-color: #f8f9fa; 
+    --text-color: #212529; 
+    --card-bg: white; 
+    --input-bg: white;
+}
+.dark-mode {
+    --bg-color: #212121; 
+    --text-color: #f8f9fa; 
+    --card-bg: #333333;
+    --input-bg: #454548; 
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+.card {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+}
+.form-control {
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+
+.btn-success { background-color: #28a745 !important; border-color: #28a745 !important; color: white; }
+.btn-danger { background-color: #dc3545 !important; border-color: #dc3545 !important; color: white; } 
+.btn-info { background-color: #17a2b8 !important; border-color: #17a2b8 !important; color: white; } 
+.btn-dark-green { background-color: #006400 !important; border-color: #006400 !important; color: white; }
+.btn-dark-red { background-color: #8B0000 !important; border-color: #8B0000 !important; color: white; }
+
+#lyricsContainer {
+    height: 60px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 15px;
+    background-color: var(--input-bg);
+    border-radius: 5px;
+    padding: 10px 0;
+}
+
+#lyricsDisplay {
+    color: #DC3545;
+    transition: opacity 0.3s ease-out;
+}
